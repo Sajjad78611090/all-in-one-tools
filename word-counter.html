@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Word & Character Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+
+    <nav class="bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center">
+        <a href="index.html" class="text-indigo-400 text-sm font-bold">← Back to Portal</a>
+        <h1 class="text-lg font-bold">📝 Word Counter</h1>
+        <div></div>
+    </nav>
+
+    <!-- Top Ad Placeholder -->
+    <div class="max-w-2xl mx-auto my-4 p-2 bg-gray-800 text-center text-xs text-gray-500 rounded border border-gray-700">
+        [ Ad Space ]
+    </div>
+
+    <div class="max-w-2xl mx-auto p-4">
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+            <textarea id="text-input" placeholder="Type or paste your text here..." class="w-full h-48 p-4 rounded bg-gray-900 border border-gray-700 text-white focus:outline-none focus:border-indigo-500 resize-none mb-4" oninput="countText()"></textarea>
+            
+            <div class="grid grid-cols-3 gap-4 text-center">
+                <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                    <span id="word-count" class="text-2xl font-bold text-indigo-400">0</span>
+                    <p class="text-xs text-gray-400 mt-1">Words</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                    <span id="char-count" class="text-2xl font-bold text-indigo-400">0</span>
+                    <p class="text-xs text-gray-400 mt-1">Characters</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                    <span id="read-time" class="text-2xl font-bold text-indigo-400">0 min</span>
+                    <p class="text-xs text-gray-400 mt-1">Reading Time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function countText() {
+            const text = document.getElementById('text-input').value.trim();
+            
+            const words = text ? text.split(/\s+/).filter(word => word.length > 0).length : 0;
+            const chars = text.length;
+            const readingTime = Math.ceil(words / 200); // Avg 200 wpm
+
+            document.getElementById('word-count').innerText = words;
+            document.getElementById('char-count').innerText = chars;
+            document.getElementById('read-time').innerText = readingTime + " min";
+        }
+    </script>
+</body>
+</html>
