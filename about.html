@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - AllTools</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+body{background:#f9fafb;color:#333}
+header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:10}
+.header-inner{max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:800;color:#e5322d;text-decoration:none} .logo span{color:#333}
+nav a{margin-left:24px;text-decoration:none;color:#555;font-weight:500;font-size:14px}
+.container{max-width:800px;margin:0 auto;padding:40px 24px}
+.card{background:#fff;border:1px solid #eef0f2;border-radius:12px;padding:40px}
+h1{font-size:36px;font-weight:800;margin-bottom:12px}
+h1 span{color:#e5322d}
+.sub{color:#777;font-size:18px;margin-bottom:30px;line-height:1.5}
+h2{font-size:20px;margin:28px 0 12px;color:#222}
+p{color:#555;line-height:1.7;margin-bottom:16px;font-size:15px}
+ul{margin-left:20px;margin-bottom:20px;color:#555;line-height:1.8}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0}
+.stat{background:#f9fafb;border-radius:10px;padding:20px;text-align:center;border:1px solid #f0f0f0}
+.stat b{font-size:28px;color:#e5322d;display:block}
+.stat span{font-size:13px;color:#777}
+.footer{text-align:center;padding:40px 20px;color:#999;font-size:13px;background:#fff;margin-top:40px;border-top:1px solid #eee}
+.btn{display:inline-block;background:#e5322d;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:10px}
+</style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<a href="/index.html" class="logo">All<span>Tools</span></a>
+<nav><a href="/index.html">All Tools</a><a href="/about.html">About</a><a href="#">Contact</a></nav>
+</div>
+</header>
+
+<div class="container">
+<div class="card">
+<h1>About <span>AllTools</span></h1>
+<p class="sub">We make simple, fast and free tools that help you work smarter every day.</p>
+
+<p><b>All-in-One Tools</b> is a free online platform where you get 50+ tools in one place — for images, PDFs, text, and daily tasks. No signup, no watermark, no limits.</p>
+
+<h2>Our Mission</h2>
+<p>Our goal is simple: save your time. Instead of searching 10 different websites for 10 different tools, you get everything here. Whether you are a student, freelancer, or business owner, our tools are made for you.</p>
+
+<div class="stats">
+<div class="stat"><b>50+</b><span>Free Tools</span></div>
+<div class="stat"><b>100%</b><span>Free Forever</span></div>
+<div class="stat"><b>0</b><span>Login Required</span></div>
+</div>
+
+<h2>What we offer?</h2>
+<ul>
+<li><b>AI Tools:</b> AI Image Generator, AI Chat, Paraphraser, Summarizer</li>
+<li><b>Image Tools:</b> Compressor, Background Remover, Resizer, Converter</li>
+<li><b>PDF Tools:</b> Viewer, Merge, Split, Word to PDF, PDF to Word</li>
+<li><b>Text & Generators:</b> Word Counter, QR Generator, Password Generator, etc.</li>
+</ul>
+
+<h2>Why AllTools?</h2>
+<p>✓ No signup needed<br>✓ Fast and secure - files processed in browser<br>✓ Mobile friendly - works on any device<br>✓ Always free</p>
+
+<p>We are constantly adding new tools. If you have a suggestion, contact us.</p>
+
+<a href="/index.html" class="btn">Explore All Tools →</a>
+</div>
+</div>
+
+<div class="footer">© 2026 AllTools - 50+ Free Online Tools</div>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
+</html>
